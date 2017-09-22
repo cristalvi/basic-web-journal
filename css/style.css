@@ -615,7 +615,7 @@ div.blog-post {
 
 .blog-post .post-title h1 {
     color: #333333;
-    font-size: 35px;
+    font-size: 34px;
     line-height: 45px;
     font-weight: 700;
     margin-top: 24px;
@@ -643,6 +643,7 @@ div.blog-post {
     font-weight: 300;
     letter-spacing: 0.8px;
     font-family: "Poppins", sans-serif;
+    text-indent: 40px;
 }
 
 
@@ -1790,7 +1791,7 @@ blockquote {
 .credit {
     color: #333333;
     text-align: center;
-    margin-top: 20px;
+    margin: 40px 0 34px 0;
 }
 
 .credit a {
