@@ -300,6 +300,16 @@ button {
     clear: both;
 }
 
+.menu-link h4 a {
+    display: inline-block;
+    padding: 4px;
+    margin: 8px;
+}
+
+.menu-link h4 a:active {    /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    color: rgb(207, 221, 1);
+}
+
 .menu-link li {
     display: inline-block;
     margin: 2px 4px;
@@ -317,6 +327,9 @@ button {
     color: rgba(0,150,207,1);
 }
 
+.menu-link li a:active {    /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    color: rgb(207, 221, 1);
+}
 
 
 /* About Me (Left Sidebar) */	
@@ -343,7 +356,7 @@ button {
 }
 
 .my-detail .white-spacing {
-    padding: 23px;
+    padding: 22px;
     border-bottom: 1px dashed #cccccc;
 }
 
