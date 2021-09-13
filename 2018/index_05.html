@@ -62,54 +62,37 @@ of my thoughts and experiences, and other day to day happenings">
                
                  
                  <!-- About Me (Left Sidebar) Start -->
-                 <div class="col-md-3">
-                   <div class="about-fixed">
-                    
-                     <div class="my-pic">
-                        <img src="https://i.imgur.com/LcuHYfj.jpg" alt="Lady in a floppy hat">
-<!--                        <img src="images/pic/my-pic.png" alt=""> -->
-                        <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
-                         <div id="menu" class="collapse">
-                           <ul class="menu-link">
-                            <h4>2018</h4>
-                               <li><a href="index_January2018.html">January</a></li>
-                               <li><a href="index_February2018.html">February</a></li>
-                               <li><a href="index_March2018.html">March</a></li>
-                               <li><a href="index_April2018.html">April</a></li>
-                               <li><a href="index_May2018.html">May</a></li>
-                               <li><a href="index_June2018.html">June</a></li>
-                               <li><a href="index_July2018.html">July</a></li>
-                               <li><a href="index_August2018.html">August</a></li>
-                               <li><a href="index_September2018.html">September</a></li>
-                               <li><a href="index_October2018.html">October</a></li>
-                               <li><a href="index_November2018.html">November</a></li>
-                               <li><a href="index_December2018.html">December</a></li>
-                            </ul>
-                           <ul class="menu-link">
-                            <p><a href="index_January.html">previous entries</a></p>
-                            </ul>
-                         </div>
-                        </div>
-                      
-                      
-                      
-                      <div class="my-detail">
-                    	
-                        <div class="white-spacing">
-                            <h1>My Time Here</h1>
-                            <span>An account of my thoughts<br/>and experiences, and other<br/>day to day happenings</span>
-                        </div> 
-                       
-                       <ul class="social-icon">
-                         <li><a href="http://www.facebook.com/cristalvisays" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="http://www.twitter.com/cristalvisays" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <li><a href="http://www.linkedin.com/in/cristalvi" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                         <li><a href="https://github.com/cristalvi" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                        </ul>
+                 <div w3-include-html="includes/nav.html"></div>
+                 <script>
+                  function includeHTML() {
+                    var z, i, elmnt, file, xhttp;
+                    /* Loop through a collection of all HTML elements: */
+                    z = document.getElementsByTagName("*");
+                    for (i = 0; i < z.length; i++) {
+                      elmnt = z[i];
+                      /*search for elements with a certain atrribute:*/
+                      file = elmnt.getAttribute("w3-include-html");
+                      if (file) {
+                        /* Make an HTTP request using the attribute value as the file name: */
+                        xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                          if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                          }
+                        }
+                        xhttp.open("GET", file, true);
+                        xhttp.send();
+                        /* Exit the function: */
+                        return;
+                      }
+                    }
+                  }
+                  </script>
 
-                    </div>
-                  </div>
-                </div>
                 <!-- About Me (Left Sidebar) End -->
                 
                 
@@ -255,7 +238,8 @@ of my thoughts and experiences, and other day to day happenings">
     <!-- All Javascript Plugins  -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>
-    
+    <script>includeHTML();</script>
+
     <!-- Main Javascript File  -->
     <script type="text/javascript" src="js/scripts.js"></script>
 
