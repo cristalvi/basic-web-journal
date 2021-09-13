@@ -176,7 +176,7 @@ button {
 
 .button:before {
     font-family: 'FontAwesome';
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -706,10 +706,10 @@ div.blog-post {
     height: 100%;
     object-fit: cover;
     opacity: .5;
-    user-drag: none;
+    /* user-drag: none; */
    -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
+   /* -webkit-user-select: none; */
+   /* -moz-user-select: none; */
 }
 
 .video-box p {
@@ -746,7 +746,7 @@ div.blog-post {
     content: '\f10e';
     font-family: 'fontawesome';
     display: inline-block;
-    float: right;
+    /* float: right; */
     color: #333333;
     font-size: 35px;
     position: relative;
@@ -860,9 +860,6 @@ blockquote {
 
 /* You May Also Like */
 
-.you-may-also-like {
-}
-
 .you-may-also-like h3 {
     font-size: 25px;
     line-height: 35px;
@@ -885,9 +882,6 @@ blockquote {
 
 
 /* Comment */
-
-.comment {
-}
 
 .comment h3 {
     font-size: 25px;
