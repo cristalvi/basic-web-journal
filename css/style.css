@@ -659,6 +659,10 @@ div.blog-post {
     color: #8c8c8c;
 }
 
+.blog-post .post-info b {
+    margin-top: 80px;
+}
+
 .blog-post p {
     font-size: 16px;
     line-height: 30px;
@@ -667,11 +671,6 @@ div.blog-post {
     letter-spacing: 0.8px;
     font-family: "Poppins", sans-serif;
     text-indent: 40px;
-}
-
-.blog-post b {
-    margin-top: 40px;
-	margin-left: 40px;
 }
 
 
