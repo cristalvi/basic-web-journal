@@ -17,7 +17,7 @@ of my thoughts and experiences, and other day to day happenings">
     <meta name="robots" content="index,follow">
     
     
-    <title>My Time Here - Day? 00, 2021</title>
+    <title>My Time Here - Saturday 24, 2024</title>
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../image/x-icon" href="../../images/favicon/favicon.ico">
@@ -66,7 +66,7 @@ of my thoughts and experiences, and other day to day happenings">
                
                  
                  <!-- Left Sidebar Start -->
-                 <div w3-include-html="../../includes/nav.html"></div>
+                 <div w3-include-html="../../includes/nav2024.html"></div>
                  <script>
                   function includeHTML() {
                     var z, i, elmnt, file, xhttp;
@@ -108,9 +108,10 @@ of my thoughts and experiences, and other day to day happenings">
                     		
                             
                             <div class="sub-title">
-                           		<a href="../../2021/????.html" title="Go to Home Page"><h4>back home</h4></a>
+                           		<a href="../../2024/index_02.html" title="Go to Home Page"><h4>back to summary</h4></a>
                                
-                                <a href="#comment" class="smooth-scroll"><i class="icon-bubbles"></i></a>
+                               <a href="../../index_Welcome.html"><i class="icon-home"></i></a>
+                               <a href="#comment" class="smooth-scroll"><i class="icon-bubbles"></i></a>
                              </div>
                             
                             
@@ -121,28 +122,58 @@ of my thoughts and experiences, and other day to day happenings">
                                     <!-- Post Start -->
                                     <div class="col-md-12 blog-post">
                                         <div class="post-title">
-                                          <h1>  <!-- What do you want to name this post? -->
-                                            
-                                          </h1> 
+                                          <h3>  <!-- What do you want to name this post? -->
+                                            Upending My Life
+                                          </h3> 
                                         </div>
                                         <div class="post-info">
-                                          <span>Day? 00, 2021 / by <a href="#" target="_blank">Cristal Fernett</a></span>
+                                          <span>Saturday 24, 2024 / by <a href="#" target="_blank">Cristal Fernett</a></span>
                                         </div>
-                                        <p>  <!-- What do you want to say? -->
+                                        <div id="editSect">
+                                        <!-- What do you want to say? -->
+                                        <p id="output1">
+                                            Yesterday was the end of Me & Dylan. I cannot say how hurt I was after coming home from work. Dylan had been st it agin, 10 cans deep into a case (not to mention the last of my Tito bottle). After begging him to stop drinking and work on himself and his situation, he promised again that he would try.
+                                        </p>
+                                        <p id="output2">
+                                          How can he blatently ignore the ordeal he has put us in. He does not care to change things. He does not care if he loses me. So...I went up to him for a conversation. The whole thing was short and sweet. I said I think we should separate, and he said OK. That was it, ok. After five years, that was all the response he gave me. I could not believe his lack of response to me. I will never forget it.
+                                        </p>
+                                        <p id="output">
                                             
                                         </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
+                                        </div>
+                                        <br><hr><br>
+                                        <textarea type="text" placeholder="Type something here..." id="myInput" style="width: 90%; margin-left: 25px;"></textarea>
+
+                                        <button type="button" id="btn" value="save my edits" style="margin-top: 10px; margin-left: 45%;" onclick="changeTag()" onclick="saveEdits()">submit</button>
+                                        <div id="update" style="margin-top: 20px; margin-left: 25px;" > - click to save for next time</div>
+    <script>
+        // Selecting the input element and get its value 
+        function changeTag() {
+          var inputVal = document.getElementById("myInput").value;
+        // Saving the value to the page
+          var editElem = document.getElementById("editSect");
+            editElem.contentEditable="false";
+        // Displaying the value
+            document.getElementById("output").innerHTML = inputVal;
+
+            // function saveEdits() {
+
+            // //get the editable element
+            //   var editElem = document.getElementById("output");
+
+            // //get the edited element content
+            //   var userVersion = editElem.innerHTML;
+
+            // //save the content to local storage
+            //   localStorage.userEdits = userVersion;
+
+            // //write a confirmation to the user
+            //   document.getElementById("update").innerHTML="Edits saved!";
+
+            //  }
+        }
+    </script>
+                                      
                                     </div>
                                                                           
                                     <!-- blog-post End -->

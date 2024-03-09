@@ -17,7 +17,7 @@ of my thoughts and experiences, and other day to day happenings">
     <meta name="robots" content="index,follow">
     
     
-    <title>My Time Here - Day? 00, 2021</title>
+    <title>My Time Here - Saturday 24, 2024</title>
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../image/x-icon" href="../../images/favicon/favicon.ico">
@@ -48,25 +48,14 @@ of my thoughts and experiences, and other day to day happenings">
 
  <body>
 
-	
-     
-	 <!-- Preloader Start -->
-     <div class="preloader">
-	   <div class="rounder"></div>
-      </div>
-      <!-- Preloader End -->
+	 <!-- Preloader --><div class="preloader"><div class="rounder"></div></div>
       
-      
-    
-    
     <div id="main">
         <div class="container">
             <div class="row">
             	
-               
-                 
-                 <!-- Left Sidebar Start -->
-                 <div w3-include-html="../../includes/nav.html"></div>
+     <!-- Nav Sidebar -->
+                <div w3-include-html="../../includes/nav2024.html"></div>
                  <script>
                   function includeHTML() {
                     var z, i, elmnt, file, xhttp;
@@ -97,63 +86,64 @@ of my thoughts and experiences, and other day to day happenings">
                   }
                   </script>
 
-                <!-- Left Sidebar End -->
-
-
-                  
-                 <!-- Right Sidebar Start -->
-                 <div class="col-md-9">
+     <!-- Right Pane -->
+                <div class="col-md-9">
                     <div class="col-md-12 page-body">
-                    	<div class="row">
-                    		
-                            
-                            <div class="sub-title">
-                           		<a href="../../2021/????.html" title="Go to Home Page"><h4>back home</h4></a>
-                               
+                        <div class="row">
+     <!-- Top Banner -->    <div class="sub-title">
+                           	    <a href="../../2024/index_02.html" title="Go to Home Page"><h4>back to summary</h4></a>
+                                <a href="../../index_Welcome.html"><i class="icon-home"></i></a>
                                 <a href="#comment" class="smooth-scroll"><i class="icon-bubbles"></i></a>
-                             </div>
-                            
-                            
+                            </div>
                             <div class="col-md-12 content-page">
+     <!-- Post -->              <div class="col-md-12 blog-post">
+                                    <div class="post-title">
+                                          <h3><!-- What do you want to name this post? -->So Tired.</h3> 
+                                      </div>
+                                    <div class="post-info"><span>Sunday 25, 2024 / by <a href="#" target="_blank">Cristal Fernett</a></span></div>
+                                    <div id="editSect"><!-- What do you want to say? -->
+                                        <p id="output">
+                                            I have not slept well the last few nights. Starting with being stupid drunk again, falling asleep at the poker table and blowing all of my money, and ending with crying on the couch all freaking day and night long. I hate myself more than I ever think I have. I don't think that's a good sign of things to come.
+                                          </p>
+                                        <p id="output1">
+                                            It's become very clear that no one values me at all. There is not one person who is willing to show me companionship. I am not worthy of hanging out with, as far as everything goes. There is no value in me. That's the only message I am getting from everyone in my life. There is no good reason why, that's just the only thing that keeps happening to me.
+                                          </p>
+                                        <p id="output2">
+                                            I don't know what to do. There is something wrong with me, but I don't know what it is. I have tried so many different things over so many different years, and nothing has ever changed or gotten better. I am always and forever alone. I will end up being that lonely, sad old woman who's too attached to her pets and scaring little children. I will one day die alone and scared, and no one will miss me. There will be no one there to help me when I need someone. I really think I will go crazy, literally fucking insane.
+                                          </p>
+                                      </div><br><hr><br>
+     <!-- input -->                 <textarea type="text" placeholder="Type something here..." id="myInput" style="width: 90%; margin-left: 25px;"></textarea>
+                                    <button type="button" id="btn" value="save edits" style="margin-top: 10px; margin-left: 43%;" onclick="changeTag()" onclick="saveEdits()">submit</button>
+                                    <div id="update" style="margin-top: 20px; margin-left: 25px;"> - click to save for next time</div>
+                                    <script>
+                                            function changeTag() {
+                                                var inputVal = document.getElementById("myInput").value;  // Selecting the input element and get its value 
+                                                var editElem = document.getElementById("editSect");  // Saving the value to the page
+                                                editElem.contentEditable="false";
+                                                document.getElementById("output").innerHTML = inputVal; // Displaying the value
 
+                                                // function saveEdits() {
 
+                                                // //get the editable element
+                                                //   var editElem = document.getElementById("output");
 
-                                    <!-- Post Start -->
-                                    <div class="col-md-12 blog-post">
-                                        <div class="post-title">
-                                          <h1>  <!-- What do you want to name this post? -->
-                                            
-                                          </h1> 
-                                        </div>
-                                        <div class="post-info">
-                                          <span>Day? 00, 2021 / by <a href="#" target="_blank">Cristal Fernett</a></span>
-                                        </div>
-                                        <p>  <!-- What do you want to say? -->
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                    </div>
-                                                                          
-                                    <!-- blog-post End -->
+                                                // //get the edited element content
+                                                //   var userVersion = editElem.innerHTML;
 
+                                                // //save the content to local storage
+                                                //   localStorage.userEdits = userVersion;
 
+                                                // //write a confirmation to the user
+                                                //   document.getElementById("update").innerHTML="Edits saved!";
 
-                            </div> <!-- content-page End -->
-                              
-                      </div> <!-- row End -->
+                                                //  }
+                                            }
+                                      </script>
+                                  </div> <!-- blog-post End -->
+                              </div> <!-- content-page End -->
+                          </div> <!-- row End -->
 
-                      <!-- Subscribe Form Start --
+     <!-- Subscribe Form --
                       <div class="col-md-8 col-md-offset-2">
                           <form id="mc-form" method="post" action="http://uipasta.us14.list-manage.com/subscribe/post?u=854825d502cdc101233c08a21&amp;id=86e84d44b7">
               
@@ -167,31 +157,21 @@ of my thoughts and experiences, and other day to day happenings">
                             
                           </div>
                           !-- Subscribe Form End -->
-                                
-                      <!-- Post Author Bio Box Start -->
-                      <div class="about-author margin-top-70 margin-bottom-50">
-                        
-                      <div class="picture">
-                        <img src="https://i.imgur.com/LcuHYfj.jpg" class="img-responsive" alt="Lady in a floppy hat">
-                        </div>
-                      
-                      <div class="c-padding">
-                          <h3>Article By <a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Visit Cristal Website">Cristal Fernett</a></h3>
-                          <p>Born and raised in Washington, the author discusses life from the homegrown perspective of a unique graphic designer.</p>
-                      </div>
-                      </div>
-                      <!-- Post Author Bio Box End -->
+     <!-- Post Author Bio Box -->
+                        <div class="about-author margin-top-70 margin-bottom-50">
+                            <div class="picture"><img src="../../images/favicon/apple-icon.png" class="img-responsive" alt="Lady in a floppy hat"></div>
+                            <div class="c-padding">
+                                <h3>Article By <a href="#" target="https://cristalfernett.com" data-toggle="tooltip" data-placement="top" title="Visit Cristal Website">Cristal Fernett</a></h3>
+                                <p>Born and raised in Washington, the author discusses life from the homegrown perspective of a unique graphic designer.</p>
+                              </div>
+                          </div> <!-- Post Author Bio Box End -->
 
-
-
-                      <!-- Post Comment (Disqus) Start -->
-                      <div id="comment" class="comment">
-                        <h3>Discuss post</h3>
-                          
+     <!-- Post Comment (Disqus) -->
+                        <div id="comment" class="comment">
+                            <h3>Discuss post</h3>
                       <!-- Disqus Code Start  (Please Note: Disqus will not be load on local, You have to upload it on server.)-->
-                      <div id="disqus_thread"></div>
-                  <script>
-    
+                            <div id="disqus_thread"></div>
+                <script>
     /***  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables.
         
         var disqus_config = function () {
@@ -199,7 +179,6 @@ of my thoughts and experiences, and other day to day happenings">
         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         */
-        
                     (function() { // DON'T EDIT BELOW THIS LINE
                     var d = document, s = d.createElement('script');
                     s.src = '//#.disqus.com/embed.js';   // Please change the url from your own disqus id
@@ -207,47 +186,30 @@ of my thoughts and experiences, and other day to day happenings">
                     (d.head || d.body).appendChild(s);
                     })();
                   </script>
-                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                       <!-- Disqus Code End -->
-
-                      </div> <!-- Post Comment (Disqus) End -->
-
-
-
-                      <br /><br /><br />
-
-                    </div> <!-- page-body End -->
+                          </div> <!-- Post Comment (Disqus) End -->
+                        <br><br><br>
+                      </div> <!-- page-body End -->
                      
+     <!-- Footer -->
+                    <div w3-include-html="../../includes/footer.html"></div><!-- Footer End -->
                      
-                       
-                       <!-- Footer Start -->
-                       <div w3-include-html="../../includes/footer.html"></div>
-
-                       <!-- Footer End -->
-                     
-                     
-                  </div>
-                  <!-- Right Sidebar End -->
+                  </div> <!-- Right Pane End -->
                 
-            </div> <!-- row End -->
-         </div> <!-- container End -->
+              </div> <!-- row End -->
+          </div> <!-- container End -->
       </div> <!-- main End -->
     
-    
-    
-     <!-- Endpage Box (Popup When Scroll Down) Start -->
-     <div id="scroll-down-popup" class="endpage-box">
+    <!-- Endpage Box (Popup When Scroll Down) Start -->
+    <div id="scroll-down-popup" class="endpage-box">
       <h4>Read More</h4>
-      <a href="../../2021/index_09.html">My Time Here...</a>
-     </div>
-     <!-- Endpage Box (Popup When Scroll Down) End -->
-
-
+      <a href="../../2024/index_02.html">My Time Here...</a>
+    </div> <!-- Endpage Box (Popup When Scroll Down) End -->
 
     <!-- Back to Top Start -->
     <a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
     <!-- Back to Top End -->
-    
     
     <!-- All Javascript Plugins  -->
     <script type="text/javascript" src="../../js/jquery.min.js"></script>
@@ -275,7 +237,6 @@ of my thoughts and experiences, and other day to day happenings">
 		SyntaxHighlighter.config.clipboardSwf = 'js/syntax/clipboard.swf';
 		SyntaxHighlighter.all();
 	</script>-->
-
     
    </body>
  </html>
